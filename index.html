@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion -_-</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo javascript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/aciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/semanasanta4.1.jpg','imagenes/semanasanta4.2.jpg','imagenes/semanasanta4.5.jpg','imagenes/semanasanta4.6.jpg','imagenes/semanasanta4.4.jpg','imagenes/semanasanta6.2.jpg','imagenes/cartelSS.jpg','imagenes/semanasanta6.3.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+  <h1>Samana Santa</h1>
+  <center>
+  </center>
+  </div>
+  <br>
+  <center>
+  <img src="imagenes/cartelSS.jpg" width="350" height="300">
+  </center>
+  <br>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que es la Semana Santa?</h2>
+<p>Se muestra informacion de lo que es la Semena Santa</p>
+    </a>
+    </li>
+   <li class="ui-firs-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Domingo de Pauscua </h2>
+   <p> Se muestra informacion del Domingo de Pauscua</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> ¿Como se establece la Semana Santa? </h2>
+   <p>Muestra informacion de como se establece la Semana Santa</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>La Semana santa en Atlixco</h2>
+   <p>Se muestra informacion de como se celebra la Semana Santa en Atlixco</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>La Semana Santa en Iztapalapa </h2>
+   <p> Se muestra informacion de como se celebra la Semana Santa en Iztapalapa</p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>La Semana Santa en el Vaticano</h2>
+   <p>Se muestra informacion de la celebracion de la semana santa en el Vaticano</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Semana Santa en Jerusalen</h2>
+   <p>Se muestra informacion de la celebracion de la semana santa en Jerusalen?</p>
+   </a>
+   </li>
+       <li class="ui-first-child ui-last-child">
+   <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>La Semana Santa en España</h2>
+   <p>Selebracion de la semana santa en España?</p>
+   </a>
+   </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+   <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <div>
+  <h4>Aplicacion 2</h4>
+  <h4> Carlos colosia carrizosa</h4>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"
+  <center>
+   <h1>Significado de la Semana Santa</h1>
+     </center>
+</div>	
+<div data-role="content" align="center">
+   <div>
+   <h2>¿Que es la Semana Santa?</h2>
+   <div align="justify">
+   <p> La Semana Santa, es el tiempo para dedicarse a la oración y reflexionar en Jesucristo, en los momentos del Triduo Pascual, quien con su infinita misericordia, decide tomar el lugar del hombre y recibir el castigo para liberarlo de los pecados. Asimismo, es el tiempo ideal para el ser humano meditar sobre sus acciones y los cambios que debe realizar para acercarse más a Dios y cumplir con sus mandamientos.
+
+Durante la Semana Santa, el católico cumple con diversos actos, como: procesiones, escenificación del drama de la muerte y pasión de Cristo. Los penitentes se someten a duras cargas como símbolo de su auto sacrificio y, en el día Viernes Santo, los fieles deben de guardar ayuno y abstenerse de comer carne. 
+</p>
+</div>
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Mas informacion...</h1>
+      <div>
+      <p>Semana Santa, conocida como semana mayor, es un período de 7 días que comienza con el Domingo de Ramos y culmina con el Domingo de Resurrección. Con la Semana Santa, el cristiano conmemora el Triduo Pascual, es decir, los momentos de la Pasión, la Muerte y la Resurrección de Jesucristo.
+
+La Semana Santa está precedida por la Cuaresma que se refiere al tiempo de preparación donde se recuerda los 40 días de Jesucristo en el desierto. Las celebraciones centrales de la Semana Santa son: Jueves Santo, Viernes Santo, Sábado Santo y Domingo de Resurrección.</p>
+      <br>
+       <img src="imagenes/semanasanta1.1.jpg" width="250" height="250">
+      </div>
+   </div>
+   </div>
+  </div>
+  <div>
+   <h2>Los dias mas importantes de la Semana Santa</h2>
+   <div align="justify">
+   <h3> Domingo de Ramos </h3>
+   <p>El Domingo de Ramos abre solemnemente la Semana Santa, con el recuerdo de las Palmas y de la passión, de la entrada de Jesús en Jerusalén y la liturgia de la palabra que evoca la Pasión del Señor en el Evangelio de San Lucas.
+
+En este día, se entrecruzan las dos tradiciones litúrgicas que han dado origen a esta celebración: la alegre, multitudinaria, festiva liturgia de la iglesia madre de la ciudad santa, que se convierte en mimesis, imitación de los que Jesús hizo en Jerusalén, y la austera memoria - anamnesis - de la pasión que marcaba la liturgia de Roma. Liturgia de Jerusalén y de Roma, juntas en nuestra celebración. Con una evocación que no puede dejar de ser actualizada.</p>
+<br> 
+ <center>
+ <img src="imagenes/semanasanta1.2.jpg" width="250" height="250" >
+ </center>
+ <br>
+ <br> 
+ <h3> Jueves Santo </h3>
+ <p> Como Jueves Santo se conoce una festividad cristiana que celebra la última cena de Jesús de Nazaret con sus discípulos, la institución de la eucaristía y del orden sacerdotal, así como el lavatorio de pies. Como tal, toda la cristiandad, tanto la Iglesia católica como las otras iglesias cristianas, observa la celebración del Jueves Santo.
+
+El Jueves Santo tiene lugar durante la Semana Santa, el jueves anterior al Domingo de Pascua o de Resurrección. Con el Jueves Santo se inicia el Triduo Pascual, es decir, el periodo en que se recuerda la pasión, muerte y resurrección de Jesús. 
+</p>
+<br> 
+<center>
+<img src="imagenes/semanasanta1.3.jpg" width="250" height="250">
+</center>
+<br>
+<br>
+<h3> Viernes Santo  </h3>
+<p> El Viernes Santo es una festividad cristiana en la cual se conmemora la muerte de Jesús de Nazaret. Como tal, se celebra durante la Semana Santa, después del Jueves Santo, y antes del Domingo de Resurrección o de Pascua. Este día, la Iglesia católica manda a sus fieles, como penitencia, a guardar ayuno y abstinencia de carne.
+
+El Viernes Santo es, fundamentalmente, un día de duelo durante el cual se recuerda la crucifixión de Jesucristo en el Calvario, quien se sacrifica para salvar del pecado a la humanidad y darle la vida eterna. De allí que la cruz se haya tomado como el símbolo de la gloria para la adoración de los cristianos.
+</p>
+<br> 
+<center>
+<img src="imagenes/semanasanta1.4.jpg" width="250" height="250">
+</center>
+<br>
+<br>
+<h3> Sabado Santo </h3>
+<p> Se conoce como Sábado Santo el día entre la muerte y la resurrección de Jesús. En este día, se lleva a cabo una vigilia pascual, en la cual se acostumbra bendecir el agua y encender las velas en señal de la Resurrección de Jesús.
+</p>
+<br> 
+<center>
+<img src="imagenes/semanasanta1.5.jpeg" width="250" height="250">
+</center>
+<br> 
+<br>
+<h3> Domingo Santo </h3>
+<p> El Domingo Santo, conocido como Domingo de Pascua. En el Domingo Santo, se conmemora la resurrección de Jesucristo al tercer día después de su crucifixión y, su primera aparición a los discípulos. Este día es de suma alegría para los fieles y, es interpretado como la esperanza de una nueva vida.
+</p>
+<br>
+<center>
+<img src="imagenes/semanasanta1.6.jpg" width="250" height="250">
+</center>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+  <h4>Aplicacion 02 Carlos Colosia Carrizosa</h4>
+  </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a" 
+   <center>
+   <h1>Domingo de Pauscua</h1>
+</div>
+   </center>
+<div data-role="content" align="justify">
+   <div>
+   <h2> ¿Que es pauscua? </h2>
+   <p>Pascua es la celebración más importante de la Iglesia Cristiana, donde se conmemora la Resurrección de Jesucristo al tercer día después de haber sido crucificado, según los evangelios canónicos. El término Pascua proviene del latín "páscae", que a su vez proviene del griego "πάσχα" (pasjua), una adaptación del hebreo "פסח" (pésaj), que significa "paso" o "salto".
+
+La Pascua forma parte de la Semana Santa donde en el "Viernes Santo" se celebra la crucifixión de Jesús, y en el "Domingo de Pascua" se celebra la Resurrección y su primera aparición a sus discípulos.<p>
+<br> 
+<center>
+<img src="imagenes/semanasanta2.1.jpg" width="250" height="250">
+</center>
+<br>
+<h2> El domingo de Pauscua </h2>
+<p> es una fiesta móvil, el día varía cada año y no se fija en relación al calendario civil, y sucede después de la primera luna llena en el inicio de la primavera en el hemisferio Norte. La Pascua siempre se celebra entre el 22 de Marzo y el 25 de Abril, se celebra en varios países y en cada uno posee un nombre diferente, como por ejemplo: los portugueses la llaman Páscoa, los italianos la llaman Pasqua, y los franceses Pâques.
+
+El término de Pascua remite principalmente a la fiesta de la Resurrección, que también es llamada a veces Pascua florida, pero también se usa para referirse a otras tres celebraciones cristianas: la Navidad (25 de Diciembre), la Epifanía o Adoración de los Magos (6 de Enero) y Pentecostés, la venida del Espíritu Santo (cincuenta días después de la Resurrección). </p>
+<br>
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Simbolo de la Pauscua</h1>
+      <div>
+      <p>Uno de los símbolos de la Pascua es el conejo. Este animal se convirtió en un símbolo porque en la antigüedad, en el hemisferio Norte, la celebración fue precisamente a finales del invierno y principios de la primavera, cuando los animales aparecían en los campos con sus cachorros, era la época de la fertilidad.
+
+El huevo también es un símbolo de la Pascua, representa el inicio de la vida. En varios países se regalan huevos de chocolate a los amigos, deseándoles un buen paso hacia una vida feliz.</p>
+      <br>
+      <center>
+       <img src="imagenes/semanasanta2.2.png" width="100" height="100">
+       <img src="imagenes/semanasanta2.3.jpg" width="100" height="100">
+       </center>
+      </div>
+   </div>
+   </div>
+  </div>
+   </div>
+<div data-role="footer" data-theme="b">
+  <h4>Apicacion 02 Carlos Colosia Carrizosa </h4>
+  </div>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" 
+   <center>
+   <h1> ¿Como se establece la Semana Santa?</h1>
+</div>
+   </center>
+<div data-role="content" align="justify">
+   <div>
+   <h2>¿Como se establece la Fecha de la Semana Santa</h2>
+   <p> La respuesta es que en el concilio de Nicea se determino, que la Pascua debía ser celebrada el primer domingo después de la primera luna llena que siguiera al equinoccio de primavera. De conformidad con esta norma que ha sido aceptada, el día más temprano del año en donde ocurriría la pascua sería en marzo 22 y el día mas tardío el 25 de Abril. 
+Hay que tener en cuenta otras cosas tambien. 
+Este año la pascua comenzo el 21 de Febrero, pero el jueves Santo cae el 5 de Abril. si contamos los dias veran que son 44 dias, y termina el dia 8 de Abril , lo que hace un total de 47 dias. 
+Si la cuaresma son 40 dias, ¿Por que festejamos durante 47?. 
+En efecto el miercoles de ceniza fue el dia 28 de Febrero y no el 21. La iglesia, debido a que hay personas que hacen 40 dias de ayuno, y como el dia domingo es el dia del Señor, y no se puede ayunar, corrieron una semana hacia atras el miercoles de ceniza, para que al descontar los dimingos, queden igual 40 dias de ayuno. Por ende la Pascua comienza el Miercoles de ceniza y termina el Domingo de Resurreccion, es decir en este año seria el 28 de Febrero y termina el 8 de Abril. 
+</p>
+<br> 
+<center>
+<img src="imagenes/semanasanta3.1.jpg" width="100" height="100">
+<img src="imagenes/semanasanta3.2.jpg" width="75" height="100">
+</center>
+
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Dato interesante</h1>
+      <div>
+      <p>Según la disposición de la Luna, la Tierra y el Sol, se ve iluminada una mayor o menor porción de la cara visible de la Luna.</p>
+      <br>
+      <p>La Luna Nueva o novilunio es cuando la Luna está entre la Tierra y el Sol y por lo tanto no la vemos.<p>
+      <br>
+
+<p>En el Cuarto Creciente, la Luna, la Tierra y el Sol forman un ángulo recto, por lo que se puede observar en el cielo la mitad de la Luna, en su período de crecimiento.</p>
+<br>
+
+<p>La Luna Llena o plenilunio ocurre cuando La Tierra se ubica entre el Sol y la Luna; ésta recibe los rayos del sol en su cara visible, por lo tanto, se ve completa.</p>
+<br>
+
+<p>Cuarto Menguante los tres cuerpos vuelven a formar ángulo recto, por lo que se puede observar en el cielo la otra mitad de la cara lunar.</p>
+<br>
+      <br>
+      <center>
+       <img src="imagenes/semanasanta3.3.jpg" width="250" height="250">
+       </center>
+      </div>
+   </div>
+   </div>
+  </div>
+  </div>
+<div data-role="footer" data-theme="c">
+  <h4>Aplicacion 02 Carlos Colosia Carrizosa</h4>
+  </div>
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>¿Como se celebra la Semana Santa en Atlixco?</h1>
+</div>
+   </center>
+   <div data-role="content" align="justify">
+   <div>
+   <h2>El Doloroso Viacrusis de Atlixco </h2>
+   <p>El Vía Crucis de Atlixco, en el estado mexicano de Puebla, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión encapuchados y descalzos, con grilletes y coronas de espinas.</p>
+   <center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/semanasanta4.1.jpg',1)"><img src="imagenes/cartelSS.jpg" width="250" height="250" id="Image24"></a></div>
+   </center>
+   <h2> Tradiciones de la Semana Santa en Atlixco </h2>
+   <p> Entre las tradiciones que han distinguido a Atlixco es la ‘Procesión del Silencio’ en la comunidad de Nexatengo, la cual es realizada por la cofradía de Nazarenos de la entidad y la ‘Procesión de Engrillados’. Cabe mencionar que ambos eventos son actos de penitencia, fe y de arrepentimiento, mismos que se realizarán el próximo 6 de abril a partir de la seis de la mañana en Santa Lucía Cosamaloapan”, refirió el alcalde. <p>
+<center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/semanasanta4.2.jpg',1)"><img src="imagenes/cartelSS.jpg" width="250" height="250" id="Image25"></a><br>
+   </center>
+   <br>
+   <h2> Las estaciones de la Semana Santa </h2>
+   <p> Asimismo, Camacho Corripio invitó a todos los poblanos y personas de otros estados vecinos a admirar el tapete monumental de “Flores de Primavera”, el cual fue hecho con más de 160 mil plantas y con imágenes alusivas a esta temporada de Semana Santa, y otro con diseños representativos de Atlixco.
+
+Agregó que Atlixco cuenta con servicios turísticos, una gran infraestructura hotelera y una amplia gama de zonas donde puede degustar la gastronomía propia de la entidad, desde sus restaurantes hasta la zona de mercados. </p>
+<center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/semanasanta4.5.jpg',1)"><img src="imagenes/cartelSS.jpg" width="250" height="250" id="Image26"></a><br>
+   </center>
+   <div>
+   
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Dato Interesante</h1>
+      <div>
+      <h2> 20 AÑOS DE TRADICIÓN Y FE SE VIVIRÁ EN ESTA SEMANA SANTA, EN ATLIXCO </h2>
+      <p> El ayuntamiento de Atlixco y La Cofradía de Nazarenos invitan a su tradicional Procesión del Silencio, en su vigésimo año consecutivo que se llevará a cabo este Viernes Santo en la comunidad de Nexatengo como una muestra de fe y devoción en relación a la Semana Santa. Con la finalidad de preservar las tradiciones y ofrecer un atractivo más para el turismo religioso que llega al municipio durante estas fechas.</p>
+      <br>
+
+<p>Esta procesión considerada una de las más grandes del estado, espera reunir a más de 10 mil personas a lo largo de su recorrido de más de 8 kilómetros, en comparación del año pasado. La reunión comienza en la junta auxiliar de Santa Lucía Cosamaloapan y termina en la colonia de Nexatengo, cargando en su mayoría por jóvenes, las imágenes de Jesús de Nazaret, Jesús crucificado y la dolorosa. </p>
+
+    <center>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/semanasanta4.7.jpg',0)"><img src="imagenes/cartelSS.jpg" width="250" height="250" id="Image27"></a><br>
+      </center>
+      
+      </div>
+   </div>
+   </div>
+  </div>
+  <div>
+  <div>
+  <br> 
+  <br>
+  <h2>
+  Domingo de ramos en Atlizco </h2>
+  <p> Atlixco Pue.- Dentro de las celebraciones que se realizan en Atlixco con motivo de la semana santa, se realizan procesiones importantes como los engrillados, y la procesión del silencio en Santa Lucia Cosamaloapan  donde miles de personas asisten a este municipio.</p>
+  <center>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/semanasanta4.6.jpg',1)"><img src="imagenes/cartelSS.jpg" width="250" height="250" id="Image28"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/semanasanta4.4.jpg',1)"><img src="imagenes/cartelSS.jpg" width="250" height="250" id="Image29"></a></p>
+  </center>
+  </div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="c">
+  <h4>Aplicacion 02 Carlos Colosia Carrizosa</h4>
+  </div>
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" 
+   <center>
+   <h1>La Semana Santa en Iztapalapa</h1>
+</div>
+   </center>
+<div data-role="content" align="justify">
+   <div>
+   <h2> ¿Como celebran la Semana Santa?</h2>
+   <p>En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.</p>
+   <center>
+   <img src="imagenes/semanasanta5.1.jpg" width="250" height="250">
+   <br>
+   <br>
+   </center>
+   <h3> ¿Como son los dias de la Semana Santa en Iztapalapa</h3>
+   <h4> Domingo de ramos </h4>
+   <p> El Domingo de Ramos, las casas y las calles se llenan de flores, las campanas se echan a vuelo, y un ángel con un niño inician la procesión que avanza lentamente. Los cientos de nazarenos llevan adornos de bandas blancas sobre las túnicas moradas; las vírgenes y las mujeres del pueblo adornan sus cabezas con coronas de flores, la Virgen, la Magdalena, llevan atuendos únicos. Por momentos Iztapalapa se transforma en Jerusalén, la multitud se dirige al barrio de San Lucas para que el sacerdote bendiga las palmas, los ramos de manzanilla, romero y laurel (éstas se guardan, pues la gente les atribuye poderes curativos)</p>
+   <center>
+   <img src="imagenes/semanasanta5.2.jpg" width="250" height="250">
+   </center>
+   <br>
+   <br>
+   <h4> Jueves Santo </h4>
+   <p>El Jueves Santo, los adornos en las calles son de color blanco y morado; los actores llegan al lugar donde han ensayado; llena de flores y frutas está la cárcel que Cristo ocupará más tarde. De una casa, sale la procesión que inician el niñoy el ángel, después las vírgenes, Jesús, los nazarenos, los sacerdotes y dignatarios romanos, flanqueados por los soldados. La procesión recorre las calles de los ocho barrios, y llega hasta la iglesia del Señor de la Cuevita, donde los presentes quieren tocar la urna y pedir gracias. Los nazarenos, que suman cientos, ahora llevan una corona de espinas con flores en la cabeza. Después de la alocución del obispo en la iglesia, continúa la escena de la última Cena en el Jardín Cuitláhuac; sigue el Lavatorio de los Pies; el Prendimiento, y la Oración del Huerto. Los parlamentos no coinciden con la Sagrada Escritura, se han transformado al correr de los años según el gusto de losparticipantes; lo mismo sucede con otros episodios que los lugareños han agregado. </p>
+   <center> 
+    <img src="imagenes/semanasanta5.3.jpg" width="250" height="250">
+   </center>
+   <br>
+   <br>
+   <h3>Viernes Santo </h3>
+   <p> El Viemes Santo congrega multitudes; la presencia de los encargados de la seguridad y de los primeros auxilios a los visitantes es muy evidente. Llevan a Cristo de la cárcel a la explanada,donde hay una columna; ahí se suceden varios episodios. La gente se estremece conmovída por la representación, cuando Jesús vestido de blanco es azotado con unas ramas teñidas de rojo. El rumor aumenta cuando la muchedumbre inicia el recorrido al Calvario-Cerro. La subida es difícil para los penitentes, actores y espectadores que quieren presenciar la escena; algunos se conforman con los periscopios de cartón adquiridos allí mismo. Todos deben llegar al lugar de las tres caídas, del encuentro con la Verónica, la Samaritana y las santas mujeres.   </p>
+   <center>
+   <img src="imagenes/semanasanta5.4.jpg" width="250" height="250">
+   </center>
+   <br> 
+   <br>
+   <h3> Sabado Santo </h3>
+   <p> La procesión avanza lentamente, entre los árboles, en medio de sollozos, lamentos, lágrimas, desmayados y gritos de quienes ofrecen su mercancÍa, desde comida y sombreros, hasta refrescos y aparatos para ver mejor el espectáculo. Los soldados romanos, los más de mil nazarenos que llevan sus cruces a cuestas, los judíos, se entremezclan con los espectadores, las santas mujeres, los apóstoles. Todos ellos, que han estado en todos los momentos, llegan hasta el lugar donde están las tres cruces. La actuación del Cristo, que llena de fervor a los espectadores e imparte intensa emoción a todas las ceremonias, llega a la culminación con la Crucifixión. En el lugar sagrado del cerro, en la cruz más grande se coloca a Jesús. </p>
+   <center>
+   <img src="imagenes/semanasanta5.5.jpg" height="250" width="250">
+   </center>
+   <br> 
+   <br> 
+   <h3> Domingo Santo </h3>
+   <p> La iglesia ahora alienta una representación paralela, diferente a la popular, que considera no está apegada a los textos bíblicos; es de hecho, el reconocimiento de dos puntos de vista: por una parte el de la tradición escrita y sancionada, la litúrgica en el interior del templo, y por otra la celebración callejera que va más allá de una escenificación, pues en ella convergen los ideales, las esperanzas de acabar con muchas de las dificultades de la vida; es más que teatro, es el enlace entre el pasado (el drama) y el presente, la búsqueda de reconocimiento de los organizadores y de los que participan, el gusto de los que toman parte como actores, o como espectadores. Todo ello permite que la fiesta, ceremonia o representación continúe por lo que significa no sólo para los de Iztapalapa sino para la nación entera. </p>
+   <center>
+   <img src="imagenes/semanasanta5.6.jpg" width="250" height="250">
+   </center>
+   </div>
+  </div>
+<div data-role="footer" data-theme="a">
+  <h4>Aplicacion 02 Carlos Colosia Carrizosa</h4>
+  </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>La Semana Santa en el Vaticano</h1>
+</div>
+   </center>
+<div data-role="content" align="justify">
+   <div>
+   <h2>¿Como se prepra el vaticano para la Semana santa?</h2>
+   <p>El Vaticano comenzó este miércoles con los preparativos para celebrar la primera Semana Santa que encabezará el papa Francisco y que comenzará en cuatro días con el domingo de ramos.</p> 
+
+<p>La Plaza San Pedro amaneció hoy llena de operarios que, en un camión acoplado, trasladaron árboles de olivos, que serán colocados -junto a otros florales- en el centro de la histórica plaza. </p>
+
+<p>El papa argentino presidirá el domingo 24 a las 9.30 (hora local, 5.30 hora argentina) la tradicional celebración del domingo de ramos, con la que se inicia la Semana Santa, el tiempo litúrgico más importante para los católicos</p> 
+
+<p>Ese día se conmemora cuando Jesús entró triunfalmente en Jerusalén, aclamado como un rey por la gente con ramas y palmas de olivos que cortó de los árboles que se encontraban al lado del camino. 
+
+Tradicionalmente, el Papa comparte la celebración de ese domingo con los jóvenes, porque fueron justamente los chicos hebreos los que lo recibieron con mayor entusiasmo. 
+ </p>
+ <center>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','imagenes/semanasanta6.2.jpg',1)"><img src="imagenes/semanasanta6.1.JPG" width="250" height="125" id="Image30"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/semanasanta6.3.jpg',1)"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','imagenes/cartelSS.jpg',1)"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/semanasanta6.2.jpg',1)"><img src="imagenes/semanasanta6.4.jpg" width="250" height="125" id="Image32"></a></p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/semanasanta6.3.jpg',0)"><img src="imagenes/semanasanta6.5.jpg" width="250" height="125" id="Image37"></a>
+ </center>
+   
+   </div>
+  </div>
+<div data-role="footer" data-theme="a">
+  <h4>Apliacion 02 Carlos Colosia Carrizosa</h4>
+  </div>
+ </div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>La Semana Santa en Jerusalen</h1>
+</div>
+   </center>
+<div data-role="content" align="justify">
+   <div>
+   <h2>¿Como se Celebra la Semana Santa en Jerusalen?</h2>
+   <p> Si hay un lugar en el mundo en que la mayoría de las personas coinciden en llamar santo, ese es Jerusalén.
+Sucede que las tres principales religiones monoteístas (judaísmo, cristianismo e islam) consideran la consideran una tierra sagrada. De hecho, su mismo nombre significa "Ciudad de Paz" en hebreo o "La Santa" en árabe.
+Por eso no es de extrañarse que la capital de Israel -que fue declarada Patrimonio de la Humanidad por la UNESCO en 1981- reviva cada año en la Semana Santa.
+Miles de turistas -principalmente cristianos que recuerdan la Pasión de Cristo- llegan a la ciudad para celebrar los días que transcurren entre el Domingo de Ramos (que recuerda la entrada triunfal de Jesús en Jerusalén) y Pascua (la resurrección del Señor, luego de su muerte en la cruz).
+Así, toda la semana se convierte en una celebración litúrgica, donde religión y turismo se entrecruzan de una manera excepcional.
+Domingo de Ramos
+Como no podía ser de otro modo, el Monte de los Olivos -ubicado en el valle de Kidrón, al este de Jerusalén- reúne a peregrinos de los cinco continentes durante el Domingo de Ramos.</p>
+<center>
+<img src="imagenes/semanasanta7.1.jpg" width="250" height="250">
+</center>
+<br>
+<br>
+<h3>Los Dias de Semana Santa en Jerusalen </h3>
+<h5> Domingo de Ramos </h5>
+<p> Como no podía ser de otro modo, el Monte de los Olivos -ubicado en el valle de Kidrón, al este de Jerusalén- reúne a peregrinos de los cinco continentes durante el Domingo de Ramos.Según describe el sitio LocuraViajes.com, estas personas ponen todo su fervor y oraciones en un camino que los lleva desde la iglesia de Betfagé (donde supuestamente se encuentra la roca en la que se apoyó Jesús para subirse a su asno), hasta la misma entrada en Jerusalén, en lo que es la representación del camino que hizo siglos atrás el propio Cristo hasta entrar triunfalmente a la ciudad. Luego se dirigen a la Iglesia de Santa Ana en Getsemaní, o ingresan a la ciudad a través de las murallas por la Puerta de San Esteban</p>
+<center>
+<img src="imagenes/semanasanta7.2.jpg" width="250" height="250">
+</center>
+<br> 
+<br>
+<h3> Jueves y Viernes  Santo </h3>
+<p>Los momentos más emotivos y llamativos se dan el Jueves Santo, día en que los cristianos recuerdan la Última Cena de Cristo, en la que instauró el sacramento de la Eucaristía y tras la cual fue traicionado por Judas.
+Ese día se celebra una misa en el Santo Sepulcro, una iglesia que comparten los católicos, ortodoxos y armenios. Allí se realiza el lavatorio de pies, tal y como hizo Jesús con sus apóstoles. </p>
+<p>"Más abajo, en el Cenáculo, está el sitio donde Jesús celebró su Última Cena, un lugar santo que está siendo motivo de disputa entre el Vaticano, que lo reclama, y el Estado de Israel, y que sólo se abre dos veces en el año para los católicos: en Jueves Santo y en Pentecostés", explicó Javier Gómez, para LocuraViajes.com. Desde allí se emprende la marcha hacia la Basílica de la Agonía, donde en la tarde del Jueves Santo se vuelve a celebrar otra misa, pues junto a ella está el Huerto de Getsemaní donde Jesús hizo sus últimas oraciones antes de ser apresado acusado por el beso de Judas. </p>
+<center>
+<img src="imagenes/semanasanta7.3.jpg" width="250" height="250">
+</center>
+<br>
+<br> 
+<h3> Pauscuas </h3>
+<p>Tal como su nombre lo indica, el Sábado de Vigila es un momento de espera antes de lo que es el corazón de las creencias cristianas: la resurrección del Señor.
+La Pascua es un momento de celebración, y en Jerusalén ese domingo se vive con gran alegría y fe. En esa fecha se realiza una nueva peregrinación hasta el Santo Sepulcro, donde se vuelve a celebrar una misa pontifical y otra procesión.</p><p>La última celebración litúrgica se realiza a 11 kilómetros de Jerusalén, en Al Qaibe donde se supone que Jesús Resucitado se apareció por primera vez a sus discípulos.</p>
+ </p>
+ <center> 
+ <img src="imagenes/semanasanta7.5.jpg" width="250" height="250">
+ </center>
+
+
+   </div>
+  </div>
+<div data-role="footer" data-theme="a">
+  <h4>Aplicacion 02 Carlos Colosia Carrizosa</h4>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>La Semana Santa en España</h1>
+</div>
+   </center>
+<div data-role="content" align="justify">
+   <div>
+   <h2>¿Como se Celebra la Semana Santa en España?</h2>
+   <p>Con la Semana Santa, España se transforma. Cada persona, en cada lugar, se vuelca para vivir con intensidad una de las fiestas con más tradición de nuestro país. No dejes pasar la oportunidad de viajar a España en estas fechas: te esperan momentos muy especiales y un ambiente totalmente distinto a lo que has conocido.</p>
+   <p>Hay muchas formas de descubrir España: disfrutando de sus costas y playas, siguiendo una ruta monumental, recorriendo sus espacios naturales, practicando deportes como el golf... Pero si nunca has visitado nuestro país durante la Semana Santa, entonces tienes que venir. Incluso los que ya conozcan esta famosa fiesta deberían repetir, porque en cada zona de España se celebra de manera distinta.</p><p>En España, la Semana Santa se festeja con gran emoción. La gente participa vivamente de los actos y tradiciones. De día y de noche, las calles se convierten en espacios donde se mezclan la música de los tambores, el colorido de las flores y el arte de las esculturas religiosas, creando así una imagen conmovedora </p>
+<center>
+<img src="imagenes/semanasanta8.1.jpg" width="250" height="250">
+</center>
+<br>
+<br>
+<h2>Fiestas de Fama mundial </h2>
+<p> La Semana Santa se celebra en todas las ciudades y puntos de España. Sin embargo, hay varias fiestas que, por su especial atractivo y singularidad, son muy conocidas y han sido declaradas de Interés Turístico Internacional.</p>
+<h3> La Semana Santa de Sevilla</h3>
+<p>En la Semana Santa de Sevilla verás como los cofrades son capaces de soportar el peso de las Vírgenes, ricamente adornadas, mientras desfilan por las estrechas calles del casco antiguo. La Semana Santa de Málaga posee el privilegio de liberar a un preso, y uno de los momentos más emotivos es precisamente cuando la figura de Jesús da su bendición al recluso. Durante la Semana Santa de Cuenca también tendrás la ocasión de disfrutar de los conciertos de la Semana de la Música Religiosa, que se realizan en edificios históricos como la Catedral.</p>
+<center>
+<img src="imagenes/semanasanta8.2.jpg" width="250" height="250">
+</center>
+<br> 
+<br>
+<h3> La Semana Santa de Leon  </h3>
+<p>Si acudes a la Semana Santa de León seguro que aplaudes al contemplar el encuentro de San Juan y la Virgen en la Plaza Mayor con el que finaliza la Ronda y la Procesión de los Pasos. En la Semana Santa de Zamora los cantos gregorianos producen una atmósfera increíble durante las procesiones nocturnas. En los desfiles de la Semana Santa de Valladolid fíjate bien en las esculturas religiosas porque son valiosas muestras de arte barroco. La Semana Santa de Salamanca es espectacular con los monumentos de la ciudad como telón de fondo. </p>
+<center>
+<img src="imagenes/semanasanta8.3.jpg" width="250" height="250">
+</center>
+<br>
+<br> 
+<h3> La Procesión del Domingo de Ramos de Elche </h3>
+<p>La Procesión del Domingo de Ramos de Elche, con sus palmas es una de las más hermosas de toda España. En la Semana Santa de Cartagena el final de las procesiones resulta muy emocionante, cuando miles de personas se unen para cantar la salve a la Virgen. La Semana Santa de Lorca es particularmente original ya que los desfiles también incluyen personajes y escenas de la Biblia y de antiguas civilizaciones. En la provincia de Albacete, el momento cumbre de la Semana Santa de Hellín, es la Tamborada, cuando el sonido de hasta 20.000 tambores irrumpe en el lugar. La Semana Santa de Cáceres sorprende por sus cofradías nacidas en el siglo XV y la Semana Santa de Murcia ofrece momentos impresionantes como cuando la procesión del Cristo Yacente pasa, el sábado, bajo el Arco de Santo Domingo.
+ </p>
+ <center> 
+ <img src="imagenes/semanasanta8.4.jpg" width="250" height="250">
+ </center>
+
+
+   </div>
+  </div>
+<div data-role="footer" data-theme="a">
+  <h4>Aplicacion 02 Carlos Colosia Carrizosa</h4>
+  </div>
+ </div>
+ 
+ 
+ </div>
+</body>
+</html>
